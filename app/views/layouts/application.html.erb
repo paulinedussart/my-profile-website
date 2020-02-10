@@ -8,11 +8,17 @@
     <%= action_cable_meta_tag %>
     <%= stylesheet_link_tag 'application', media: 'all' %>
     <%#= stylesheet_pack_tag 'application', media: 'all' %> <!-- Uncomment if you import CSS in app/javascript/packs/application.js -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" data-turbolinks-eval=false data-turbolinks-run-once=true></script>
   </head>
-  <body>
+  <body class="container">
     <%= render 'shared/navbar' %>
-    <%= yield %>
 
-    <%= javascript_pack_tag 'application' %>
+    <div id="content">
+      <%= yield %>
+    </div>
+
+
+    <%= javascript_pack_tag 'application' %>  <!-- from app/javascript/packs/application.js -->
   </body>
+
 </html>

@@ -1,38 +1,38 @@
-<div class="navbar navbar-expand-sm navbar-light navbar-lewagon">
+<div class="navbar fixed-top navbar-expand-sm navbar-light" style="background-color:#101010">
   <%= link_to root_path, class: "navbar-brand" do %>
-    <%= image_tag "logo_brand.svg", alt: "Le logo Pauline Dussart" %>
+    <%= image_tag "logo_brand.svg", alt: "Le logo Pauline Dussart", width: 100%>
   <% end %>
 
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
+    <span class="navbar-toggler-icon"> <i class="fas fa-bars"></i></span>
   </button>
 
 
-  <div class="collapse navbar-collapse" id="navbarSupportedContent">
-    <ul class="navbar-nav mr-auto">
-      <li class="nav-item active">
-        <%= link_to "HOME", root_path, class: "nav-link" %>
+  <div class="collapse navbar-collapse nobuu" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto " id="primary-nav">
+      <li class="nav-item mx-2 ">
+        <%= link_to "HOME", root_path, class: current_class?(root_path), class: "nav-link active " %>
       </li>
-      <li class="nav-item">
-        <%= link_to "ABOUT", about_path, class: "nav-link" %>
+      <li class="nav-item mx-2">
+        <%= link_to "ABOUT", about_path, class: current_class?(about_path), class: "nav-link" %>
       </li>
-      <li class="nav-item">
+      <li class="nav-item mx-2">
         <%= link_to "BLOG", "#", class: "nav-link" %>
       </li>
-      <li class="nav-item">
-        <%= link_to "PORTFOLIO", portfolio_path, class: "nav-link" %>
+      <li class="nav-item mx-2">
+        <%= link_to "PORTFOLIO", portfolio_path, class: current_class?(portfolio_path), class: "nav-link "  %>
       </li>
-      <li class="nav-item">
-        <%= link_to "CONTACT", contact_path, class: "nav-link" %>
+      <li class="nav-item mx-2">
+        <%= link_to "CONTACT", contact_path, class: current_class?(contact_path), class: "nav-link" %>
       </li>
     </ul>
   </div>
 
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
-    <ul>
-      <a href="https://github.com/paulinedussart"  target="_blank" class="text-decoration-none nav-item"><i class="fab fa-github"></i></a>
+    <ul class="d-flex justify-content-around" style="width:100px">
+      <a href="https://www.linkedin.com/in/paulinedussart/" target="_blank" class="text-decoration-none nav-item"><i class="fab fa-linkedin-in"></i></a>
       <a href="https://dribbble.com/paulinedussart"  target="_blank" class="text-decoration-none nav-item"><i class="fab fa-dribbble"></i></a>
-      <a href="https://www.linkedin.com/in/paulinedussart/" target="_blank" class="text-decoration-none nav-item"><i class="fab  fa-linkedin-in"></i></a>
+      <a href="https://github.com/paulinedussart"  target="_blank" class="text-decoration-none nav-item"><i class="fab fa-github"></i></a>
     </ul>
   </div>
 
