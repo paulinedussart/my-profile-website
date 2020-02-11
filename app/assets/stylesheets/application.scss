@@ -13,7 +13,7 @@
 @import "pages/index";
 
 .container {
-  margin-top: 100px;
+  margin: 100px auto 0 auto;
   background-color: 101010 !important;
 
   ul {
@@ -21,14 +21,23 @@
     padding-left: 0px;
   }
 
+  p {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 18px;
+    text-indent: 2px;
+  }
+
   // animation du content apparition fade
   #content {
-  -webkit-animation: fade 5s; /* Safari 4+ */
-  -moz-animation:    fade 5s; /* Fx 5+ */
-  -o-animation:      fade 5s; /* Opera 12+ */
-  animation-name:         fade 5s; /* IE 10+, Fx 29+ */
-  animation-duration: 1s;
-  transition: all 1s ease-out;
+    -webkit-animation: fade 5s; /* Safari 4+ */
+    -moz-animation:    fade 5s; /* Fx 5+ */
+    -o-animation:      fade 5s; /* Opera 12+ */
+    animation-name:         fade 5s; /* IE 10+, Fx 29+ */
+    animation-duration: 1s;
+    transition: all 1s ease-out;
   }
 
   @-webkit-keyframes fade {
@@ -47,34 +56,6 @@
     0%   { opacity: 0; }
     100% { opacity: 1; }
   }
-
-
-  #home .presentation h1 {
-    font-style: normal;
-    font-weight: bold;
-    font-size: 64px;
-    line-height: 70px;
-  }
-
-  #home .presentation p span {
-    text-decoration: underline;
-    color: white;
-  }
-
-  #home .presentation p {
-    font-size: 15px;
-    letter-spacing: 0.02em;
-    color: grey;
-    line-height: 20px;
-  }
-
-  p {
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 14px;
-    line-height: 18px;
-    text-indent: 2px;
-  }
 }
+
 

@@ -23,17 +23,11 @@
     }
   }
 
-
+      // ---------- ANIMATION HOVER NAV LINKS -----------
   .navbar-nav .nav-link {
     font-weight: 400;
     color: $body-color !important;
     position: relative;
-  }
-
-      // ---------- ANIMATION HOVER NAV LINKS -----------
-  .navbar-nav .nav-link {
-    position: relative;
-    color: white !important;
   }
 
   .nav-link:hover {
@@ -72,14 +66,15 @@
     width: 70px;
   }
 
+  // ----------  THE TOGGLE ANIMATION NAVBAR ----------
   .navbar-toggler {
-    color: white;
-    background-color: $gray-dark !important;
+    color: $white;
+    background-color: $black !important;
     border: none;
 
     .navbar-toggler-icon  {
-      color: white;
-      background-color: $gray-dark;
+      color: $white;
+      background-color: $black;
       background-image: none !important;
       padding: 10px;
     }
