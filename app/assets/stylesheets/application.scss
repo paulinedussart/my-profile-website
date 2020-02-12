@@ -13,7 +13,7 @@
 @import "pages/index";
 
 .container {
-  margin: 100px auto 0 auto;
+  margin: 100px auto 0 auto !important ;
   background-color: 101010 !important;
 
   ul {
@@ -32,6 +32,8 @@
 
   // animation du content apparition fade
   #content {
+    margin: 0 auto;
+
     -webkit-animation: fade 5s; /* Safari 4+ */
     -moz-animation:    fade 5s; /* Fx 5+ */
     -o-animation:      fade 5s; /* Opera 12+ */
