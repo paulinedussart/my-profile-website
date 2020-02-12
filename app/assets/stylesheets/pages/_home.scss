@@ -1,1 +1,35 @@
 // Specific CSS for your home-page
+#home {
+  .presentation  {
+    margin-top: 4.5rem;
+
+    h1 {
+      font-style: normal;
+      font-weight: bold;
+      font-size: 64px;
+      line-height: 70px;
+    }
+
+    p span {
+      text-decoration: underline;
+      color: $white;
+    }
+
+    p {
+      font-size: 15px;
+      letter-spacing: 0.02em;
+      color: $warning;
+      line-height: 20px;
+    }
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .presentation {
+    margin-top: 1.5rem !important;
+  }
+
+  .sommaire {
+    display: none;
+  }
+}
