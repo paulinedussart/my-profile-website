@@ -1,32 +1,54 @@
-#card-project {
-  background-color: $grey-dark;
-  border-radius: 5px;
-  padding: 15px;
-  width: 13rem !important;
-  margin: 5px;
+#cards-project {
 
-  &:hover {
-    cursor:pointer;
-    transform: scale(1.1);
-    transition: all 100ms ease-in;
+  .disable {
+    h4, h5, h6, p {
+      color: rgba(255, 255, 255, 0.17) !important;
+    }
+    opacity: 0.2 !important;
   }
 
-  .card-body-project {
-    h5 {
-      font-size: 13px;
-      letter-spacing: 0.03em;
-      margin-bottom: 0;
+  #card-project {
+    background-color: $grey-dark;
+    border-radius: 5px;
+    padding: 15px;
+    width: 13rem !important;
+    margin: 5px;
+
+
+    &:hover {
+      cursor:pointer;
+      transform: scale(1.2);
+      transition: all 100ms ease-in;
     }
 
-    h6 {
-      font-size: 14px;
-      font-weight: normal;
-      color: $light-gray;
-      margin-bottom: 0;
-    }
+    .card-body-project {
+      position: relative;
 
-    .logo_code {
-      width: 30px !important;
+      h5 {
+        font-size: 13px;
+        letter-spacing: 0.03em;
+        margin-bottom: 0;
+      }
+
+      h6 {
+        font-size: 14px;
+        font-weight: normal;
+        color: $light-gray;
+        margin-bottom: 0;
+      }
+
+      .logo_code {
+        width: 30px !important;
+      }
+
+      // .logos-project {
+      //   position: absolute !important;
+      //   left: 150px !important;
+      //   bottom: -20px !important;
+      // }
+
     }
   }
 }
+
+
