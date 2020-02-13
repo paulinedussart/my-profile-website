@@ -1,7 +1,11 @@
 // Specific CSS for your home-page
 #home {
+  .success-work {
+    left: rem;
+  }
   .presentation  {
     margin-top: 4.5rem;
+
 
     h1 {
       font-style: normal;
@@ -16,17 +20,98 @@
     }
 
     p {
-      font-size: 15px;
+      font-size: 14px;
       letter-spacing: 0.02em;
       color: $warning;
       line-height: 20px;
+    }
+  }
+
+  h3 {
+    font-size: 24px;
+  }
+
+  h4 {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+
+  .little-title-home {
+    position: relative;
+    font-weight: 500;
+  }
+
+  .little-title-home::before {
+    color: white;
+    position: absolute;
+    content: "";
+    bottom: -6px;
+    left: -4px;
+    background-color: #BB0000;
+    height: 3px;
+    width: 74px;
+  }
+
+  #my-work {
+    .boxes {
+      margin-left: 40px;
+
+      h4 {
+        margin-bottom: 0.2rem;
+      }
+
+      .text-boxes {
+        margin-left: 1rem;
+      }
+    }
+
+    .logo-work-home {
+      width: 45px;
+      margin-right: 50px;
     }
   }
 }
 
 @media screen and (max-width: 800px) {
   .presentation {
-    margin-top: 1.5rem !important;
+    margin-top: 0rem !important;
+  }
+
+  .sommaire {
+    display: none;
+  }
+
+  #my-work {
+    .boxes {
+      margin-top: 1.5rem !important;
+      margin-left: 0rem !important;
+    }
+
+
+    .logo-work-home {
+      width: 45px;
+    }
+  }
+}
+
+@media screen and (min-width: 801px) {
+  .presentation {
+    position: fixed;
+    top: 20px;
+  }
+
+  .success-work {
+
+    .little-title-home {
+      margin-top: 3rem;
+      margin-bottom: 1rem;
+    }
+
+    left: 28rem;
+
+    #title-my-project {
+      display: none;
+    }
   }
 
   .sommaire {
