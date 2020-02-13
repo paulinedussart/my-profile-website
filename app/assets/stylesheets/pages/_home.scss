@@ -14,17 +14,7 @@
       line-height: 70px;
     }
 
-    p span {
-      text-decoration: underline;
-      color: $white;
-    }
 
-    p {
-      font-size: 14px;
-      letter-spacing: 0.02em;
-      color: $warning;
-      line-height: 20px;
-    }
   }
 
   h3 {
@@ -71,6 +61,7 @@
     }
   }
 }
+
 
 @media screen and (max-width: 800px) {
   .presentation {

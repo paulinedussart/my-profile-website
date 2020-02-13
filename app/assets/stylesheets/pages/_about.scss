@@ -11,6 +11,59 @@
     position: absolute;
     right: 35px;
     bottom: 40px;
+  }
 
+  .about-content {
+    max-width: 26rem;
+
+    h3 {
+      font-size: 28px;
+      line-height: 28px;
+    }
+
+    .about-title {
+      position: relati
+    }
+  }
+
+  .guillemet {
+    color: $danger;
+    font-family: Catamaran;
+    font-weight: 700;
+    font-size: 60px;
+  }
+
+  .guillemet_one {
+    position: absolute;
+    top: 2rem;
+    right: 30rem;
+
+
+  }
+
+  .guillemet-two {
+    position: absolute;
+    top: 7rem;
+    right: 17rem;
+
+  }
+
+}
+
+@media screen and (min-width: 801px) {
+  #about {
+
+    .background-red {
+      margin-top: 6rem;
+    }
+
+    .about-content {
+      margin-top: 3rem;
+
+      .about-text-content {
+        margin-top: 3rem;
+        margin-left: 2rem;
+      }
+    }
   }
 }
