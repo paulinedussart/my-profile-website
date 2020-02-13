@@ -1,0 +1,16 @@
+#about {
+
+  .background-red {
+    background-color: $danger;
+    width: 370px;
+    height: 370px;
+    position: relative;
+  }
+
+  .photo-profil {
+    position: absolute;
+    right: 35px;
+    bottom: 40px;
+
+  }
+}
