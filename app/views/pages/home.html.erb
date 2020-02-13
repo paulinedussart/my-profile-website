@@ -1,8 +1,8 @@
 <div id="home" class="row d-flex justify-content-between">
-  <div class="col-12 col-lg-6 presentation">
+  <div class="col-12 col-lg-6 presentation p-4 ">
     <h1>Hello, I'm <br>Pauline Dussart.</h1>
-    <p>I’m a <span>French Front-End Developper</span>  and <span>Web Designer</span> currently working as Freelance. I learn to code in 2019 at <a href="https://www.lewagon.com/fr"><span>Le Wagon</span></a> and I felt in love with front-end development and javascript. </p>
-    <button class="btn downloadCV">Download my CV</button>
+    <p style="max-width: 22rem" >I’m a <span>French Front-End Developper</span>  and <span>Web Designer</span> currently working as Freelance. I learn to code in 2019 at <a href="https://www.lewagon.com/fr"><span>Le Wagon</span></a> and I felt in love with front-end development and javascript. </p>
+    <button class="btn downloadCV mt-3">Download my CV</button>
 
 
     <div class="sommaire" style="margin-top: 5rem;">
@@ -14,16 +14,18 @@
     </div>
   </div>
 
-  <div class="col-12 col-lg-6  " id="cards-project">
-    <div class="d-flex flex-wrap justify-content-center">
+  <div class="col-12 col-lg-6 success-work p-2" >
+
+    <div class="d-flex flex-wrap justify-content-center" id="cards-project">
       <div class="left-column">
-        <div class="clickable card-project one mt-5" onclick="location.href='https://www.google.com/';">
+        <h3 id="title-my-project" class=' mt-4 little-title-home'>MY PROJECTS :</h3>
+        <div class="clickable card-project one" onclick="location.href='https://www.google.com/';" id="first-card">
           <div class="card-body-project">
             <h5 class="card-compagny-projet">CODE FOR MARSEILLE</h5>
             <h6 class="card-place-projet  text-muted">Marseille — France</h6>
             <h6 class="card-date-projet text-muted">Septembre 2019</h6>
-            <h4 class="card-compagny-projet my-4">MARCELLE</h4>
-            <p class="card-text-projet">Application Mobile pour participer au développement de l'ecomobilité à Marseille. I create the design with Figma and create the pages with vue.js</p>
+            <h4 class="card-compagny-projet my-3">MARCELLE</h4>
+            <p class="card-text-projet">Mobil App to develop of the ecomobility in Marseille (map, transports info, assistant). I participated in the development of the prototype and its integration with Vue.js.</p>
             <div class="d-flex justify-content-end logos-project">
               <a href="#" class="mx-1"><%= image_tag "ruby-on-rails.png", class: "logo_code" %></a>
               <a href="#" class="mx-1"><%= image_tag "vue.png", class: "logo_code" %></a>
@@ -34,11 +36,11 @@
       <div class="right-column">
         <div class="clickable card-project two" onclick="location.href='https://www.google.com/';">
           <div class="card-body-project">
-            <h5 class="card-compagny-projet">GLOBWORKER</h5>
+            <h5 class="card-compagny-projet">FREELANCE</h5>
             <h6 class="card-place-projet  text-muted">France</h6>
             <h6 class="card-date-projet text-muted">Juin 2019</h6>
-            <h4 class="card-compagny-projet my-4">GLOB...</h4>
-            <p class="card-text-projet">Wireframe for the landing page of the Web App. A market place where people can by a month pass to access to different coworking.  nbvnbvnbvnbv </p>
+            <h4 class="card-compagny-projet my-3">GLOBWORKER</h4>
+            <p class="card-text-projet">Creation of a wireframe for the landing page of the Web App. A market place where people can access to several coworking spaces with a monthly pass</p>
             <div class="d-flex justify-content-end logos-project">
               <a href="#" class="mx-1"><%= image_tag "ruby-on-rails.png", class: "logo_code" %></a>
               <a href="#" class="mx-1"><%= image_tag "Postgresql.png", class: "logo_code" %></a>
@@ -51,17 +53,73 @@
             <h5 class="card-compagny-projet">LE WAGON MARSEILLE</h5>
             <h6 class="card-place-projet  text-muted">Marseille — France</h6>
             <h6 class="card-date-projet text-muted">Juin 2019</h6>
-            <h4 class="card-compagny-projet my-4">COWORKSPACE</h4>
-            <p class="card-text-projet">Application Web (BtoBtoC) pour permettre de réserver sa place dans un espace de coworking. Gestion des réservations en tant qu’espace de cowork.  Application  développée lors des 2 dernières semaines du bootcamp</p>
+            <h4 class="card-compagny-projet my-3">COWORKSPACE</h4>
+            <p class="card-text-projet"> Web App (BtoBtoC) to book a desk in a coworking space. Management of reservations as a coworking space. This App was developed during the last 2 weeks of the bootcamp</p>
             <div class="d-flex justify-content-end logos-project">
               <a href="#" class="mx-1"><%= image_tag "ruby-on-rails.png", class: "logo_code" %></a>
               <a href="#" class="mx-1"><%= image_tag "Postgresql.png", class: "logo_code" %></a>
             </div>
           </div>
         </div>
+      </div>
+    </div>
+
+
+    <div id="my-work" class="mt-5 p-3 mb-4">
+      <h3 class='little-title-home'>WHAT I DO :</h3>
+
+      <div class="boxes">
+        <div class="d-flex box-my-work mb-3">
+          <%= image_tag "dev.svg", class: "logo-work-home" %>
+          <div class="boxes-content">
+            <h4>Front-End developpement</h4>
+            <p>I really love bring to life my ideas or the prototype and see the user interact with my code.</p>
+          </div>
+        </div>
+
+        <div class="d-flex box-my-work ">
+          <%= image_tag "design.svg", class: "logo-work-home" %>
+          <div class="boxes-content">
+            <h4>Web Design</h4>
+            <p>I love create new design and think about the best experience for a user. It's very interesting and challenging.</p>
+          </div>
+        </div>
 
       </div>
     </div>
 
+    <div id="my-work" class=" p-3">
+      <h3 class='little-title-home'>TECHNICALS SKILLS :</h3>
+      <div class="boxes">
+        <div class="">
+          <div>
+            <h4>Frameworks</h4>
+            <p class="ml-4">Ruby on Rails, React.js (en cours d’apprentissage)</p>
+          </div>
+        </div>
+
+        <div class="">
+          <div>
+            <h4>Languages</h4>
+            <p class="ml-4">HTML 5, CSS 3, SCSS, Javascript ES6, Ruby </p>
+          </div>
+        </div>
+
+        <div class="">
+          <div>
+            <h4>Technologies</h4>
+            <p class="ml-4">Git/Github, Node.js, Heroku, Webpack, PostgreSQL, Cloudinary, MapBox, Zapier, APIs</p>
+          </div>
+        </div>
+
+        <div class="">
+          <div>
+            <h4>Softwares</h4>
+            <p class="ml-4">Figma (wireframe/prototype), Affinity Designer (design), Affinity Photo, Final Cut Pro X(vidéo), Whimsical (userflow, mindmap)</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
   </div>
 </div>

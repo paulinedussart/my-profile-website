@@ -7,12 +7,17 @@
     opacity: 0.2 !important;
   }
 
+  #first-card {
+    margin-top: 6rem;
+  }
+
+
   .card-project {
     background-color: $grey-dark;
     border-radius: 5px;
-    padding: 15px;
-    width: 13rem !important;
-    min-height: 18rem !important;
+    padding: 25px;
+    width: 13rem;
+    min-height: 18rem;
     margin: 5px;
     transition: all 100ms ease-in;
     position: relative;
@@ -44,11 +49,25 @@
 
       .logos-project {
         position: absolute !important;
-          right: 13px !important;
-          bottom: 17px !important;
+        right: 13px !important;
+        bottom: 17px !important;
       }
 
     }
+  }
+}
+
+@media screen and (max-width: 800px) {
+  #cards-project {
+    #first-card {
+      margin-top: 2rem  !important;
+    }
+  }
+
+ .card-project {
+    width: 16rem !important;
+    min-height: 14rem !important;
+    margin-bottom: 20px !important;
   }
 }
 
