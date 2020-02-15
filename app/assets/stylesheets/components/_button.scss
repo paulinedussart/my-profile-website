@@ -8,14 +8,15 @@
 #contact {
   a {
     text-decoration: none;
+    width: 200px;
     background-color: $grey-dark;
     border-radius: 50px;
     padding: 7px 25px;
     color: white;
     font-size: 14px;
-    text-align: right;
-    float: right;
-    margin-top: 1rem;
+    text-align: center;
+    margin: 3rem auto 0 auto !important;
+    display: block;
   }
 
   /* mouse over link */
