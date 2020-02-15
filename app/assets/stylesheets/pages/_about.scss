@@ -1,0 +1,103 @@
+#about {
+  margin: 0 auto;
+
+  .background-red {
+    background-color: $danger;
+    width: 370px;
+    height: 370px;
+    position: relative;
+    margin: 0 auto;
+  }
+
+  .photo-profil {
+    position: absolute;
+    right: 35px;
+    bottom: 40px;
+  }
+
+  .about-content {
+    max-width: 26rem;
+
+    h3 {
+      font-size: 28px;
+      line-height: 28px;
+    }
+
+    .about-title {
+      position: relati
+    }
+  }
+
+  .guillemet {
+    color: $danger;
+    font-family: Catamaran;
+    font-weight: 700;
+    font-size: 50px;
+  }
+
+}
+
+@media screen and (min-width: 801px) {
+  #about {
+
+    .background-red {
+      margin-top: 6rem;
+    }
+
+    .about-content {
+      margin-top: 3rem;
+
+      .about-text-content {
+        margin-top: 3rem;
+        margin-left: 2rem;
+      }
+    }
+
+    .grey-text {
+      text-indent: 2rem;
+    }
+  }
+}
+
+
+@media screen and (max-width: 800px) {
+  #about {
+
+    margin-top: 8rem;
+
+    .photo-profil {
+      width: 9rem;
+      height: 9rem;
+      right: 10px;
+      bottom: 15px;
+    }
+
+    .about-title {
+      margin-left: 1rem;
+    }
+
+    .background-red {
+      width: 9rem;
+      height: 9rem;
+    }
+
+    .about-content {
+      margin-top: 2rem;
+      padding: 1rem;
+
+      h3 {
+        font-size: 22px;
+        line-height: 28px;
+      }
+
+      .guillemet {
+      font-size: 30px;
+      line-height: 1rem;}
+    }
+
+    .about-text-content  {
+      margin-top: 1rem;
+      margin-left: 1rem;
+    }
+  }
+}

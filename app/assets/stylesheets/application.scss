@@ -30,6 +30,18 @@
     text-indent: 2px;
   }
 
+  .grey-text {
+    font-size: 15px;
+    letter-spacing: 0.01em;
+    color: $warning;
+    line-height: 20px;
+  }
+
+  .grey-text span {
+    text-decoration: underline;
+    color: $white;
+  }
+
   // animation du content apparition fade
   #content {
     margin: 0 auto;
