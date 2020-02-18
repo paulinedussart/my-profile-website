@@ -1,7 +1,7 @@
 <div id="home" class="row d-flex justify-content-between">
   <div class="col-12 col-lg-6 presentation p-4 ">
     <h1>Hello, I'm <br>Pauline Dussart.</h1>
-    <p style="max-width: 22rem" class="grey-text" >I’m a <span>French Front-End Developper</span>  and <span>Web Designer</span> currently working as Freelance. I learn to code in 2019 at <a href="https://www.lewagon.com/fr"><span>Le Wagon</span></a> and I felt in love with front-end development and javascript. </p>
+    <p style="max-width: 22rem" class="grey-text" >I’m a <span>French FullStack Developper</span> and <span>Web Designer</span> currently working as Freelance. I learn to code in 2019 at <a href="https://www.lewagon.com/fr"><span>Le Wagon</span></a> and I felt in love with  <span>Ruby on Rails</span>  and <span>Javascript</span> . </p>
     <button class="btn downloadCV mt-3">Download my CV</button>
 
 
@@ -19,42 +19,42 @@
     <div class="d-flex flex-wrap justify-content-center" id="cards-project">
       <div class="left-column">
         <h3 id="title-my-project" class=' mt-4 little-title-home'>MY PROJECTS :</h3>
-        <div class="clickable card-project one" onclick="location.href='https://www.google.com/';" id="first-card">
+        <div class="clickable card-project one" onclick="location.href='https://www.marcelle.mobi/';"  target="_blank" id="first-card">
           <div class="card-body-project">
             <h5 class="card-compagny-projet">CODE FOR MARSEILLE</h5>
             <h6 class="card-place-projet  text-muted">Marseille — France</h6>
             <h6 class="card-date-projet text-muted">Septembre 2019</h6>
             <h4 class="card-compagny-projet my-3">MARCELLE</h4>
-            <p class="card-text-projet">Mobil App to develop of the ecomobility in Marseille (map, transports info, assistant). I participated in the development of the prototype and its integration with Vue.js.</p>
+            <p class="card-text-projet">Mobil App to develop of the ecomobility in Marseille (map, transports info, assistant). I participated in the development of the prototype and its integration with Vue.js. I also created the Rails API request for the weather and the air quality.</p>
             <div class="d-flex justify-content-end logos-project">
               <a href="#" class="mx-1"><%= image_tag "ruby-on-rails.png", class: "logo_code" %></a>
+              <a href="#" class="mx-1"><%= image_tag "nuxt.png", class: "logo_code" %></a>
               <a href="#" class="mx-1"><%= image_tag "vue.png", class: "logo_code" %></a>
             </div>
           </div>
         </div>
       </div>
       <div class="right-column">
-        <div class="clickable card-project two" onclick="location.href='https://www.google.com/';">
+        <div class="clickable card-project two" onclick="location.href='#';">
           <div class="card-body-project">
             <h5 class="card-compagny-projet">FREELANCE</h5>
             <h6 class="card-place-projet  text-muted">France</h6>
             <h6 class="card-date-projet text-muted">Juin 2019</h6>
             <h4 class="card-compagny-projet my-3">GLOBWORKER</h4>
-            <p class="card-text-projet">Creation of a wireframe for the landing page of the Web App. A market place where people can access to several coworking spaces with a monthly pass</p>
+            <p class="card-text-projet">Creation of a wireframe for the landing page. It's a Web App where people can access to several coworking spaces with a monthly pass.</p>
             <div class="d-flex justify-content-end logos-project">
-              <a href="#" class="mx-1"><%= image_tag "ruby-on-rails.png", class: "logo_code" %></a>
-              <a href="#" class="mx-1"><%= image_tag "Postgresql.png", class: "logo_code" %></a>
+              <a href="#" class="mx-1"><%= image_tag "figma.png", id: "logo_figma" %></a>
             </div>
           </div>
         </div>
 
-        <div class="clickable card-project three mt-2" onclick="location.href='https://www.google.com/';">
+        <div class="clickable card-project three mt-2" onclick="location.href='http://www.find-coworkspace.com/';" target="_blank">
           <div class="card-body-project">
             <h5 class="card-compagny-projet">LE WAGON MARSEILLE</h5>
             <h6 class="card-place-projet  text-muted">Marseille — France</h6>
             <h6 class="card-date-projet text-muted">Juin 2019</h6>
             <h4 class="card-compagny-projet my-3">COWORKSPACE</h4>
-            <p class="card-text-projet"> Web App (BtoBtoC) to book a desk in a coworking space. Management of reservations as a coworking space. This App was developed during the last 2 weeks of the bootcamp</p>
+            <p class="card-text-projet"> App to book a desk in a coworking space. For the coworking, the management of bookings is possible. This App was developed during the last 2 weeks of the bootcamp.</p>
             <div class="d-flex justify-content-end logos-project">
               <a href="#" class="mx-1"><%= image_tag "ruby-on-rails.png", class: "logo_code" %></a>
               <a href="#" class="mx-1"><%= image_tag "Postgresql.png", class: "logo_code" %></a>
@@ -72,8 +72,8 @@
         <div class="d-flex box-my-work mb-3">
           <%= image_tag "dev.svg", class: "logo-work-home" %>
           <div class="boxes-content">
-            <h4>Front-End developpement</h4>
-            <p>I really love bring to life my ideas or the prototype and see the user interact with my code.</p>
+            <h4>Web Developpement</h4>
+            <p>I love bring to life my ideas or the prototype to see the user interact with my code.</p>
           </div>
         </div>
 
@@ -108,7 +108,7 @@
         <div class="">
           <div>
             <h4>Technologies</h4>
-            <p class="ml-4">Git/Github, Node.js, Heroku, Webpack, PostgreSQL, Cloudinary, MapBox, Zapier, APIs</p>
+            <p class="ml-4">Git/Github, Heroku, Webpack, PostgreSQL, Cloudinary, MapBox, Zapier, APIs</p>
           </div>
         </div>
 
