@@ -62,38 +62,40 @@
 }
 
 // ____ CARD PORTFOLIO ______
-#portfolio {
-  .card-body-portfolio {
-    text-align: center;
+.card-body-portfolio {
+
+  .illustration-work {
+    display: block;
+    margin: 15px auto !important;
   }
 
-  .work-content {
-    padding-left: 36px;
-    width: 450px;
-  }
+  .card-portfolio {
+    width: 350px !important;
+    margin: 0 auto;
 
-  h5 {
-    font-size: 20px;
-  }
+    h5 {
+      font-size: 16px;
+    }
 
-  p {
-    font-size: 27px;
-    font-weight: 300;
-    line-height: 30px;
-  }
-  a {
-    text-decoration: underline;
-    color: $white;
-    font-size: 22px;
-    font-weight: 300;
-  }
+    p {
+      font-size: 25px;
+      font-weight: 300;
+      line-height: 30px;
+    }
 
-  a:hover, a:active {
-    text-decoration: none;
-    font-weight: 400;
-    font-size: 20px;
-  }
+    a {
+      text-decoration: underline;
+      color: $white;
+      font-size: 22px;
+      font-weight: 400;
+    }
 
+    a:hover, a:active {
+      text-decoration: none;
+      font-weight: 400;
+      transform: scale(-1)
+    }
+  }
 }
 // _________________________
 
