@@ -62,7 +62,39 @@
 }
 
 // ____ CARD PORTFOLIO ______
+#portfolio {
+  .card-body-portfolio {
+    text-align: center;
+  }
 
+  .work-content {
+    padding-left: 36px;
+    width: 450px;
+  }
+
+  h5 {
+    font-size: 20px;
+  }
+
+  p {
+    font-size: 27px;
+    font-weight: 300;
+    line-height: 30px;
+  }
+  a {
+    text-decoration: underline;
+    color: $white;
+    font-size: 22px;
+    font-weight: 300;
+  }
+
+  a:hover, a:active {
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 20px;
+  }
+
+}
 // _________________________
 
 
