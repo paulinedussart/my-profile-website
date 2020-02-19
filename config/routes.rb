@@ -5,4 +5,5 @@ Rails.application.routes.draw do
   get 'contact', to: 'pages#contact', as: :contact
   get 'portfolio', to: 'pages#portfolio', as: :portfolio
   get 'coworkspace', to: 'pages#coworkspace', as: :coworkspace
+  get 'marcelle', to: 'pages#marcelle', as: :marcelle
 end

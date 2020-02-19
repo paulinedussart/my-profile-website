@@ -13,4 +13,7 @@ class PagesController < ApplicationController
 
   def coworkspace
   end
+
+  def marcelle
+  end
 end
