@@ -61,6 +61,45 @@
   }
 }
 
+// ____ CARD PORTFOLIO ______
+.card-body-portfolio {
+
+  .illustration-work {
+    display: block;
+    margin: 15px auto !important;
+  }
+
+  .card-portfolio {
+    width: 350px !important;
+    margin: 0 auto;
+
+    h5 {
+      font-size: 16px;
+    }
+
+    p {
+      font-size: 25px;
+      font-weight: 300;
+      line-height: 30px;
+    }
+
+    a {
+      text-decoration: underline;
+      color: $white;
+      font-size: 22px;
+      font-weight: 300;
+    }
+
+    a:hover, a:active {
+      text-decoration: none;
+      font-weight: 400;
+      transform: scale(-1)
+    }
+  }
+}
+// _________________________
+
+
 @media screen and (max-width: 800px) {
   #cards-project {
     #first-card {
@@ -72,6 +111,18 @@
     width: 14rem !important;
     min-height: 15rem !important;
     margin-bottom: 20px !important;
+  }
+
+  .card-body-portfolio {
+    margin: 0 auto 100px auto;
+  }
+
+  .card-portfolio  {
+    padding: 20px;
+  }
+
+  .illustration-work {
+    width: 270px !important;
   }
 }
 

@@ -10,4 +10,10 @@ class PagesController < ApplicationController
 
   def portfolio
   end
+
+  def coworkspace
+  end
+
+  def marcelle
+  end
 end
