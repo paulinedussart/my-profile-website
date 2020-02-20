@@ -1,18 +1,28 @@
 #coworkspace {
   margin: 0 auto;
 
+  .content-with-space {
+    margin: 100px auto;
+  }
+
+  p {
+    font-size: 20px;
+    line-height: 24px;
+  }
+
   .coworkspace_images {
-    max-width: 700px;
-    display: block;
   }
 
   .description-coworkspace {
-    max-width: 300px;
+    padding-left: 20px;
   }
 }
 
 
 @media screen and (max-width: 800px) {
   #coworkspace {
+    .coworkspace_images {
+      width: 200px !important;
+    }
   }
 }
