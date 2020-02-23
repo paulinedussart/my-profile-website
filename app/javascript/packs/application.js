@@ -11,3 +11,5 @@ require("channels")
 import "bootstrap";
 import "../components/navbar";
 import "../components/card";
+
+$('.carousel').carousel()

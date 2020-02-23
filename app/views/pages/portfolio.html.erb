@@ -1,12 +1,12 @@
 <div class="row">
   <div id="portfolio mt-3" class="row col-lg-12 d-flex justify-content-around">
 
-    <div class="card-body-portfolio clickable col" onclick="location.href='#'">
+    <div class="card-body-portfolio clickable col" onclick="location.href='<%= portfolio_marcelle_path %>'">
       <%= image_tag"marcelle.svg", width: 350, class: "illustration-work mb-3" %>
       <div class="card-portfolio">
         <h5 class="card-title-portfolio  mb-2">MARCELLE MOBI —</h5>
         <p class="card-text-portfolio">Develop the ecomobility for the Marseille inhabitants with the purpose to find a less polluting means of transport than the car.</p>
-        <a href="#" class="card-link">View Details →</a>
+        <a href="<%= portfolio_marcelle_path %>" class="card-link">View Details →</a>
       </div>
     </div>
 
@@ -14,12 +14,12 @@
 
 
 
-    <div class="card-body-portfolio clickable col" onclick="location.href='#' ">
+    <div class="card-body-portfolio clickable col" onclick="location.href='<%= portfolio_coworkspace_path %>'">
       <%= image_tag"coworkspace.svg",  width: 350, class: "illustration-work mb-3", style: "margin: 0 auto" %>
       <div class="card-portfolio">
         <h5 class="card-title-portfolio  mb-2">COWORKSPACE —</h5>
         <p class="card-text-portfolio">Help the digital nomads to book their futur coworkspace easily. A Wagon Project developed with my team in the last 10 days of the Bootcamp.</p>
-        <a href="#" class="card-link">View Details →</a>
+        <a href="<%= portfolio_coworkspace_path %>" class="card-link">View Details →</a>
       </div>
     </div>
 
