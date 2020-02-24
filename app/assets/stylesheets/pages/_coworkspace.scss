@@ -39,7 +39,20 @@
       padding: 15px 20px;
     }
 
-    #carouselExampleIndicators {
+    #carouselExampleIndicators{
+        display: none;
+      }
+
+    #galleryOfcoworkspace {
+      display: block;
+    }
+  }
+}
+
+@media screen and (min-width: 800px) {
+  #coworkspace {
+
+    #galleryOfcoworkspace {
       display: none;
     }
   }
