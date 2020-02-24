@@ -75,5 +75,36 @@
           </div>
 
         </div>
+        <div id="carouselExample" class="carousel slide p-4" data-ride="carousel" style="width: 370px";>
+          <ol class="carousel-indicators" style="bottom: -25px">
+            <li data-target="#carouselExample" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselExample" data-slide-to="1"></li>
+            <li data-target="#carouselExample" data-slide-to="2"></li>
+            <li data-target="#carouselExample" data-slide-to="3"></li>
+          </ol>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <%= image_tag "coworkspace_find.svg", class: "d-block w-100" %>
+            </div>
+            <div class="carousel-item">
+              <%= image_tag "coworkspace_book.svg", class: "d-block w-100" %>
+            </div>
+            <div class="carousel-item">
+              <%= image_tag "coworkspace_paiement.svg", class: "d-block w-100" %>
+            </div>
+            <div class="carousel-item">
+              <%= image_tag "coworkspace_reservations.svg", class: "d-block w-100" %>
+            </div>
+          </div>
+          <a class="carousel-control-prev" href="#carouselExample" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon mr-3" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="carousel-control-next" href="#carouselExample" role="button" data-slide="next">
+            <span class="carousel-control-next-icon ml-3" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
+
   </div>
 </div>

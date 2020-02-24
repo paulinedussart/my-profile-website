@@ -41,10 +41,10 @@
     }
 
     #carouselExampleIndicators{
-        display: none;
+        display: none !important;
       }
 
-    #galleryOfcoworkspace {
+    #carouselExample {
       display: block;
     }
   }
@@ -53,7 +53,7 @@
 @media screen and (min-width: 800px) {
   #coworkspace {
 
-    #galleryOfcoworkspace {
+    #carouselExample {
       display: none;
     }
   }
