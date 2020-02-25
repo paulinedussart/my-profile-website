@@ -13,3 +13,6 @@ import "../components/navbar";
 import "../components/card";
 
 $('.carousel').carousel()
+
+require("trix")
+require("@rails/actiontext")

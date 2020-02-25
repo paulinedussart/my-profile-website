@@ -1,0 +1,62 @@
+//
+// Provides a drop-in pointer for the default Trix stylesheet that will format the toolbar and
+// the trix-editor content (whether displayed or under editing). Feel free to incorporate this
+// inclusion directly in any other asset bundle and remove this file.
+//
+//= require trix/dist/trix
+
+// We need to override trix.css’s image gallery styles to accommodate the
+// <action-text-attachment> element we wrap around attachments. Otherwise,
+// images in galleries will be squished by the max-width: 33%; rule.
+.trix-content {
+  color: rgba(250,250,250, 0.95);
+  background-color: #101010;
+  position: sticky;
+  top: 0;
+
+  .attachment-gallery {
+    > action-text-attachment,
+    > .attachment {
+      flex: 1 0 33%;
+      padding: 0 0.5em;
+      max-width: 33%;
+    }
+
+    &.attachment-gallery--2,
+    &.attachment-gallery--4 {
+      > action-text-attachment,
+      > .attachment {
+        flex-basis: 50%;
+        max-width: 50%;
+      }
+    }
+  }
+
+  action-text-attachment {
+    .attachment {
+      padding: 0 !important;
+      max-width: 100% !important;
+    }
+  }
+
+}
+
+  .trix-button--icon::before {
+    background-color: lightblue;
+    color: #1F2021;
+  }
+
+  trix-toolbar .trix-button--icon-attach::before {
+    // background-image: url(data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg…200-8%200v12.5a5.5%205.5%200%200%200%2011%200V6h-1.5z%22%2F%3E%3C%2Fsvg%3E);
+    top: 0%;
+    bottom: 0%;
+  }
+
+  trix-toolbar .trix-button--icon::before {
+    opacity: 0.9;
+  }
+
+  trix-toolbar .trix-button--icon:disabled::before {
+    background-color: lightblue;
+    opacity: 0.1;
+}
