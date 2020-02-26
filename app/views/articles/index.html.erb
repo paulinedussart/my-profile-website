@@ -1,5 +1,3 @@
-<p id="notice"><%= notice %></p>
-
 <h1>Articles</h1>
 
 <table>
@@ -12,12 +10,16 @@
 
   <tbody>
     <% @articles.each do |article| %>
-      <tr>
-        <td><%= article.title %></td>
-        <td><%= link_to 'Show', article %></td>
-        <td><%= link_to 'Edit', edit_article_path(article) %></td>
-        <td><%= link_to 'Destroy', article, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-      </tr>
+    <div class="articles-index">
+      <p class="date"><em><%= article.created_at.strftime("%d %B %Y") %></em></p>
+      <p class="title"><strong><%= article.title %></strong></p>
+      <p class="description border-bottom border-secondary"><%= article.description %></p>
+
+       <%= link_to 'Show', article %>
+       <%= link_to 'Edit', edit_article_path(article) %>
+       <%= link_to 'Destroy', article, method: :delete, data: { confirm: 'Are you sure?' } %>
+    </div>
+
     <% end %>
   </tbody>
 </table>

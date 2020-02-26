@@ -59,4 +59,11 @@
   trix-toolbar .trix-button--icon:disabled::before {
     background-color: lightblue;
     opacity: 0.1;
+  }
+
+.trix-content pre {
+    padding: 10px;
+    background-color: #3c4245;
+    color: rgba(250, 250, 250, 0.6);
+    border-radius: 3px;
 }
