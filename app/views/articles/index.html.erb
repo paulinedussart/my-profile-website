@@ -1,25 +1,20 @@
 <h1>Articles</h1>
 
 <table>
-  <thead>
-    <tr>
-      <th>Title</th>
-      <th colspan="3"></th>
-    </tr>
-  </thead>
-
   <tbody>
     <% @articles.each do |article| %>
-    <div class="articles-index">
-      <p class="date"><em><%= article.created_at.strftime("%d %B %Y") %></em></p>
-      <p class="title"><strong><%= article.title %></strong></p>
-      <p class="description border-bottom border-secondary"><%= article.description %></p>
-
-       <%= link_to 'Show', article %>
-       <%= link_to 'Edit', edit_article_path(article) %>
-       <%= link_to 'Destroy', article, method: :delete, data: { confirm: 'Are you sure?' } %>
-    </div>
-
+      <%= link_to article_path(article.id) do %>
+        <div class="articles-index my-4">
+          <p class="date"><%= article.created_at.strftime("%d %B %Y") %></p>
+          <p class="title"><strong><%= article.title %></strong></p>
+          <p class="description border-bottom border-secondary"><%= article.description %></p>
+          <div class="d-flex flex-column align-items-start links">
+           <%= link_to 'Show', article %>
+           <%= link_to 'Edit', edit_article_path(article) %>
+           <%= link_to 'Destroy', article, method: :delete, data: { confirm: 'Are you sure?' } %>
+          </div>
+        </div>
+      <% end %>
     <% end %>
   </tbody>
 </table>
