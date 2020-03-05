@@ -1,0 +1,53 @@
+.articles-index {
+   position: relative;
+
+  a {
+    text-decoration: none;
+    color: rgba(250,250,250, 0.85);
+  }
+
+  p {
+    margin-bottom: 0;
+    width: 600px;
+    margin: 0 auto;
+    color: rgba(250,250,250, 0.85);
+  }
+
+  .title {
+    font-size: 32px;
+    color: #BB0000!important;
+    margin: 10px auto;
+    line-height: 32px;
+  }
+
+  .description {
+    font-size: 18px;
+    padding-bottom: 30px;
+    line-height: 25px;
+  }
+
+  .date {
+     font-size: 15px;
+     color: lightgrey;
+  }
+
+  .links {
+    position: absolute;
+    top: 30px;
+  }
+}
+
+#article-show {
+  h1 {
+    color: #BB0000;
+  }
+
+  .date-article-show {
+    color: #BB0000;
+    font-weight: bold;
+    opacity: 0.8;
+  }
+}
+
+
+

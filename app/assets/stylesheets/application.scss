@@ -1,3 +1,6 @@
+//= require actiontext
+
+
 // Graphical variables
 @import "config/fonts";
 @import "config/colors";
@@ -11,6 +14,7 @@
 // Your CSS partials
 @import "components/index";
 @import "pages/index";
+
 
 
 // html, body, div, span, h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -97,4 +101,14 @@
   }
 }
 
+.form-description .form-group .form-control {
+  height: 100px;
+  border: #ffe75e 3px solid;
+  color: rgba(0,0,0,0.75);
+}
+
+.form-title .form-group .form-control {
+  border: #f35588 2px solid;
+  color: rgba(0,0,0,0.75);
+}
 

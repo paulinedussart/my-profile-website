@@ -1,0 +1,22 @@
+
+<%= simple_form_for(@article) do |f| %>
+  <%= f.error_notification %>
+  <%= f.error_notification message: f.object.errors[:base].to_sentence if f.object.errors[:base].present? %>
+
+  <div class="form-inputs form-title">
+    <%= f.input :title %>
+  </div>
+
+  <div class="form-input form-description">
+    <%= f.input :description %>
+  </div>
+
+  <div class="form-inputs">
+    <%= f.label :content %>
+    <%= f.rich_text_area :content %>
+  </div>
+
+  <div class="form-actions align-right">
+    <%= f.button :submit, class: "btn-green" %>
+  </div>
+<% end %>
