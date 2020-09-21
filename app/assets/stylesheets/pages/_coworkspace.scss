@@ -11,20 +11,22 @@
     line-height: 24px;
   }
 
-  .coworkspace-details .coworkspace-intro .coworkspace_images {
-  }
-
   .coworkspace-details .coworkspace-intro .description-coworkspace {
     padding-left: 20px;
   }
 
+  .carousel-control-next-icon {
+    margin-left: 7rem !important;
+  }
+
+  .carousel-control-prev-icon {
+    margin-right: 7rem !important;
+  }
 
   .little-text-space {
     max-width: 500px;
   }
-
 }
-
 
 @media screen and (max-width: 800px) {
   #coworkspace {
@@ -40,9 +42,9 @@
       padding: 15px 20px;
     }
 
-    #carouselExampleIndicators{
-        display: none !important;
-      }
+    #carouselExampleIndicators {
+      display: none !important;
+    }
 
     #carouselExample {
       display: block;
@@ -52,7 +54,6 @@
 
 @media screen and (min-width: 800px) {
   #coworkspace {
-
     #carouselExample {
       display: none;
     }

@@ -45,14 +45,15 @@
     margin-bottom: 0px;
     padding-left: 0px;
   }
-
-  p {
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 14px;
-    line-height: 18px;
-    text-indent: 2px;
+  #home {
+    p {
+      font-family: Roboto;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 14px;
+      line-height: 18px;
+      text-indent: 2px;
+    }
   }
 
   .grey-text {
@@ -112,3 +113,7 @@
   color: rgba(0,0,0,0.75);
 }
 
+.link-red {
+  color: #BB0000 !important;
+  text-decoration: none;
+}

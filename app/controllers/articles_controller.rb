@@ -1,5 +1,5 @@
 class ArticlesController < ApplicationController
-  http_basic_authenticate_with name: 'username', password: 'password', only: [:new, :create, :edit, :update]
+http_basic_authenticate_with name: ENV['ADMIN_LOGIN'], password: ENV['ADMIN_PASSWORD'], only: [:new, :create, :edit, :update]
   before_action :set_article, only: [:show, :edit, :update, :destroy]
 
   # GET /articles
