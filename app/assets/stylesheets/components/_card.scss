@@ -1,7 +1,9 @@
 #cards-project {
-
   .disable {
-    h4, h5, h6, p {
+    h4,
+    h5,
+    h6,
+    p {
       color: rgba(255, 255, 255, 0.17) !important;
     }
     opacity: 0.2 !important;
@@ -11,7 +13,6 @@
     margin-top: 6rem;
   }
 
-
   .card-project {
     background-color: $grey-dark;
     border-radius: 5px;
@@ -19,17 +20,15 @@
     width: 255px;
     min-height: 350px;
     margin: 5px;
-    transition: all 100ms ease-in;
+    transition: all 200ms ease-in;
     position: relative;
 
-
     &:hover {
-      cursor:pointer;
+      cursor: pointer;
       transform: scale(1.1);
     }
 
     .card-body-project {
-
       h5 {
         font-size: 13px;
         letter-spacing: 0.03em;
@@ -56,17 +55,27 @@
         right: 13px !important;
         bottom: 17px !important;
       }
-
     }
   }
 }
 
 // ____ CARD PORTFOLIO ______
 .card-body-portfolio {
+  transition: 0.8s;
 
   .illustration-work {
     display: block;
     margin: 15px auto !important;
+  }
+
+  &:hover {
+    transform: scale(1.09);
+    transition: 0.5s;
+
+    .card-link {
+      color: #bb0000 !important;
+      text-decoration: none;
+    }
   }
 
   .card-portfolio {
@@ -87,27 +96,37 @@
       text-decoration: underline;
       color: $white;
       font-size: 22px;
-      font-weight: 300;
+      font-weight: 500;
+      transition: 0.3s;
     }
 
-    a:hover, a:active {
+    a:hover,
+    a:active {
       text-decoration: none;
       font-weight: 400;
-      transform: scale(-1)
+      transform: scale(-1);
     }
   }
 }
+
+#portfolio-wiiz {
+  margin-bottom: 70px;
+}
+
 // _________________________
 
-
 @media screen and (max-width: 800px) {
+  #portfolio-coworkspace {
+    margin-bottom: 0px;
+  }
+
   #cards-project {
     #first-card {
-      margin-top: 2rem  !important;
+      margin-top: 2rem !important;
     }
   }
 
- .card-project {
+  .card-project {
     width: 270px !important;
     min-height: 320px !important;
     margin-bottom: 20px !important;
@@ -117,7 +136,7 @@
     margin: 0 auto 100px auto;
   }
 
-  .card-portfolio  {
+  .card-portfolio {
     padding: 20px;
   }
 
@@ -125,5 +144,3 @@
     width: 270px !important;
   }
 }
-
-

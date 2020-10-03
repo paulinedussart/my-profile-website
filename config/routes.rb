@@ -6,6 +6,7 @@ Rails.application.routes.draw do
   get 'contact', to: 'pages#contact', as: :contact
   get 'portfolio', to: 'pages#portfolio', as: :portfolio
   get 'portfolio/coworkspace', to: 'portfolios#coworkspace'
-  get 'portfolio/marcelle', to: 'portfolios#marcelle'
+	get 'portfolio/marcelle', to: 'portfolios#marcelle'
+	get 'portfolio/smart-proposal', to: 'portfolios#wiiz'
 
 end
