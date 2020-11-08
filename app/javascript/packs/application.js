@@ -11,7 +11,6 @@ require("channels")
 import "bootstrap";
 import "../components/navbar";
 import "../components/card";
-import "../components/hamburger-btn";
 
 $('.carousel').carousel()
 
