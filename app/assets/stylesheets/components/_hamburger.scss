@@ -1,38 +1,5 @@
-//SCSS for Active class
+// //SCSS for Active class
 
-.fa-bars.active {
-  transition: all 0.4s ease;
-
-  &:after {
-    transition: all 0.4s ease;
-    display: block;
-    width: 24px;
-    height: 3px;
-    background: white;
-    box-shadow: none;
-    transform: rotate(45deg);
-    content: '';
-    top: 39px !important;
-    right: 39px !important;
-    position: absolute;
-    &:hover {
-      opacity: 0.9;
-    }
-  }
-  &:before {
-    transition: all 0.4s ease;
-    display: block;
-    top: 39px !important;
-    right: 39px !important;
-    position: absolute;
-    width: 24px;
-    height: 3px;
-    background: white;
-    box-shadow: none;
-    transform: rotate(-45deg);
-    content: '';
-    &:hover {
-      opacity: 0.9;
-    }
-  }
+.fa-bars {
+  color: white;
 }
