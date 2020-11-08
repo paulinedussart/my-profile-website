@@ -15,8 +15,8 @@
   </div>
 
   <div class="col-12 col-lg-6 success-work p-2">
-
-    <div class="d-flex flex-wrap justify-content-center" id="cards-project">
+    <%# ** DESKTOP VIEW ** %>
+    <div class="desktop d-flex flex-wrap justify-content-center" id="cards-project">
       <div class="left-column">
         <h3 id="title-my-project" class=' mt-3 little-title-home'>MY WORK :</h3>
 
@@ -53,7 +53,7 @@
 
       <div class="right-column">
 
-        <div class="clickable card-project one" onclick="location.href='#';" target="_blank">
+        <div class="clickable card-project one" onclick="location.href='https://www.paulinedussart.com/portfolio/smart-proposal';" target="_blank">
           <div class="card-body-project">
             <h5 class="card-compagny-projet">WIIZ - SAAS</h5>
             <h6 class="card-place-projet  text-muted">Remote — France</h6>
@@ -83,6 +83,73 @@
         </div>
 
       </div>
+    </div>
+
+    <%# ** MOBILE VIEW ** %>
+    <div class="mobile pl-3" id="cards-project">
+      <h3 id="title-my-project" class=' mt-3 mb-4  little-title-home'>MY WORK :</h3>
+      <div class="wrapper">
+
+        <div class="clickable card-project one" onclick="location.href='https://www.paulinedussart.com/portfolio/smart-proposal';" target="_blank">
+          <div class="card-body-project">
+            <h5 class="card-compagny-projet">WIIZ - SAAS</h5>
+            <h6 class="card-place-projet  text-muted">Remote — France</h6>
+            <h6 class="card-date-projet text-muted">Mars-Septembre 2020</h6>
+            <h4 class="card-compagny-projet my-3">SMART PROPOSAL</h4>
+            <p class="card-text-projet">Solution for the automated creation of commercial offers and response to calls for tenders</p>
+            <div class="d-flex justify-content-end logos-project">
+              <a href="#" class="mx-1"><%= image_tag "ruby-on-rails.png", class: "logo_code" %></a>
+              <a href="#" class="mx-1"><%= image_tag "nuxt.png", class: "logo_code" %></a>
+              <a href="#" class="mx-1"><%= image_tag "vue.png", class: "logo_code" %></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="clickable card-project one" onclick="location.href='https://www.paulinedussart.com/portfolio/marcelle';" target="_blank">
+          <div class="card-body-project">
+            <h5 class="card-compagny-projet">CODE FOR MARSEILLE</h5>
+            <h6 class="card-place-projet  text-muted">Marseille — France</h6>
+            <h6 class="card-date-projet text-muted">Septembre 2019</h6>
+            <h4 class="card-compagny-projet my-3">MARCELLE</h4>
+            <p class="card-text-projet">Mobil App to develop of the ecomobility in Marseille. I participated in the development of the prototype and its integration with Vue.js. I also created the Rails API request for the weather and the air quality.</p>
+            <div class="d-flex justify-content-end logos-project">
+              <a href="#" class="mx-1"><%= image_tag "ruby-on-rails.png", class: "logo_code" %></a>
+              <a href="#" class="mx-1"><%= image_tag "nuxt.png", class: "logo_code" %></a>
+              <a href="#" class="mx-1"><%= image_tag "vue.png", class: "logo_code" %></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="clickable card-project two mt-2" onclick="location.href='#';">
+          <div class="card-body-project">
+            <h5 class="card-compagny-projet">FREELANCE</h5>
+            <h6 class="card-place-projet  text-muted">France</h6>
+            <h6 class="card-date-projet text-muted">Juin 2019</h6>
+            <h4 class="card-compagny-projet my-3">GLOBWORKER</h4>
+            <p class="card-text-projet">Creation of a wireframe for the landing page. It's a Web App where people can access to several coworking spaces with a monthly pass. </p>
+            <div class="d-flex justify-content-end logos-project">
+              <a href="#" class="mx-1"><%= image_tag "figma.png", id: "logo_figma" %></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="clickable card-project three mt-2" onclick="location.href='https://www.paulinedussart.com/portfolio/coworkspace';" target="_blank">
+          <div class="card-body-project">
+            <h5 class="card-compagny-projet">LE WAGON MARSEILLE</h5>
+            <h6 class="card-place-projet  text-muted">Marseille — France</h6>
+            <h6 class="card-date-projet text-muted">Juin 2019</h6>
+            <h4 class="card-compagny-projet my-3">COWORKSPACE</h4>
+            <p class="card-text-projet"> App to book a desk in a coworking space. For the coworking, the management of bookings is possible. This App was developed during the last 2 weeks of the bootcamp.</p>
+            <div class="d-flex justify-content-end logos-project">
+              <a href="#" class="mx-1"><%= image_tag "ruby-on-rails.png", class: "logo_code" %></a>
+              <a href="#" class="mx-1"><%= image_tag "Postgresql.png", class: "logo_code" %></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="empty"></div>
+      </div>
+
     </div>
 
 

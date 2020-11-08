@@ -3,7 +3,7 @@
   .success-work {
     left: rem;
   }
-  .presentation  {
+  .presentation {
     margin-top: 4.5rem;
   }
 
@@ -24,12 +24,31 @@
   .little-title-home::before {
     color: white;
     position: absolute;
-    content: "";
+    content: '';
     bottom: -6px;
     left: -4px;
-    background-color: #BB0000;
+    background-color: #bb0000;
     height: 3px;
     width: 74px;
+  }
+
+  .success-work {
+    .wrapper {
+      height: 350px;
+      overflow-x: scroll;
+      overflow-y: hidden;
+      margin: 0 auto;
+
+      display: grid;
+      grid-template-columns: repeat(5, auto);
+      grid-gap: 0 24px;
+      padding: 0px;
+      padding-right: 0;
+    }
+
+    .empty {
+      width: 10px;
+    }
   }
 
   #my-work {
@@ -46,12 +65,11 @@
     }
 
     .logo-work-home {
-      width: 45px ;
+      width: 45px;
       margin-right: 50px;
     }
   }
 }
-
 
 @media screen and (max-width: 800px) {
   .presentation {
@@ -68,9 +86,13 @@
       margin-left: 0rem !important;
     }
 
-
     .logo-work-home {
       width: 45px;
+    }
+  }
+  .success-work {
+    .desktop {
+      display: none !important;
     }
   }
 }
@@ -82,6 +104,9 @@
   }
 
   .success-work {
+    .mobile {
+      display: none !important;
+    }
 
     .little-title-home {
       margin-top: 3rem;
