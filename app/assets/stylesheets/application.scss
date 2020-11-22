@@ -1,21 +1,18 @@
 //= require actiontext
 
-
 // Graphical variables
-@import "config/fonts";
-@import "config/colors";
-@import "config/bootstrap_variables";
+@import 'config/fonts';
+@import 'config/colors';
+@import 'config/bootstrap_variables';
 
 // External libraries
-@import "bootstrap/scss/bootstrap";
-@import "font-awesome-sprockets";
-@import "font-awesome";
+@import 'bootstrap/scss/bootstrap';
+@import 'font-awesome-sprockets';
+@import 'font-awesome';
 
 // Your CSS partials
-@import "components/index";
-@import "pages/index";
-
-
+@import 'components/index';
+@import 'pages/index';
 
 // html, body, div, span, h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 // a, em, img, strong, sub, sup, b, i, dl, dt, dd, ol, ul, li,
@@ -39,7 +36,6 @@
     font-size: 64px;
     line-height: 70px;
   }
-
 
   ul {
     margin-bottom: 0px;
@@ -73,9 +69,9 @@
     margin: 0 auto;
 
     -webkit-animation: fade 5s; /* Safari 4+ */
-    -moz-animation:    fade 5s; /* Fx 5+ */
-    -o-animation:      fade 5s; /* Opera 12+ */
-    animation-name:         fade 5s; /* IE 10+, Fx 29+ */
+    -moz-animation: fade 5s; /* Fx 5+ */
+    -o-animation: fade 5s; /* Opera 12+ */
+    animation-name: fade 5s; /* IE 10+, Fx 29+ */
     animation-duration: 1s;
     transition: all 1s ease-out;
   }
@@ -85,35 +81,55 @@
   }
 
   @-webkit-keyframes fade {
-    0%   { opacity: 0; }
-    100% { opacity: 1; }
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
   }
   @-moz-keyframes fade {
-    0%   { opacity: 0; }
-    100% { opacity: 1; }
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
   }
   @-o-keyframes fade {
-    0%   { opacity: 0; }
-    100% { opacity: 1; }
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
   }
   @keyframes fade {
-    0%   { opacity: 0; }
-    100% { opacity: 1; }
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
   }
 }
 
 .form-description .form-group .form-control {
   height: 100px;
   border: #ffe75e 3px solid;
-  color: rgba(0,0,0,0.75);
+  color: rgba(0, 0, 0, 0.75);
 }
 
 .form-title .form-group .form-control {
   border: #f35588 2px solid;
-  color: rgba(0,0,0,0.75);
+  color: rgba(0, 0, 0, 0.75);
 }
 
 .link-red {
-  color: #BB0000 !important;
+  color: #bb0000 !important;
   text-decoration: none;
+  font-size: 16px;
+  a {
+    color: #bb0000 !important;
+  }
 }
