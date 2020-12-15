@@ -68,6 +68,7 @@
   .illustration-work {
     display: block;
     margin: 15px auto !important;
+    width: 460px;
   }
 
   &:hover {
@@ -136,6 +137,10 @@
 
   .card-body-portfolio {
     margin: 0 auto 100px auto;
+
+    .illustration-work {
+      width: 350px;
+    }
   }
 
   .card-portfolio {

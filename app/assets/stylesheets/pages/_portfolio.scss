@@ -8,3 +8,11 @@
   border: 7px solid lightgray;
   padding: 0px;
 }
+
+@media screen and (max-width: 1200px) {
+  #portfolio {
+    .clickable {
+      text-align: center;
+    }
+  }
+}

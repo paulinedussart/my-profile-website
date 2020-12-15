@@ -25,7 +25,10 @@
 //     border: 0;
 //     vertical-align: baseline;
 // }
-
+.row {
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+}
 .container {
   margin: 100px auto 0 auto !important ;
   background-color: 101010 !important;
