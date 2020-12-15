@@ -1,19 +1,36 @@
 <div class="row">
   <div id="portfolio mt-3" class="row col-lg-12 d-flex justify-content-around">
     <div class="left">
-      <div class="card-body-portfolio clickable col" onclick="location.href='<%= portfolio_marcelle_path %>'">
-        <%= image_tag"marcelle.svg", width: 350, class: "illustration-work mb-3" %>
+			<div class="card-body-portfolio clickable col mb-5" onclick="location.href='<%= portfolio_recipe_path %>'">
+        <%= image_tag"recipeApp.png", width: 400, class: "illustration-work mb-3" %>
+        <div class="card-portfolio">
+          <h5 class="card-title-portfolio  mb-2">REACT COOKBOOK —</h5>
+          <p class="card-text-portfolio">As first React application I coded a recipe management app. I followed the Grafikart course to create this project.</p>
+          <a href="<%= portfolio_marcelle_path %>" class="card-link">View Details →</a>
+        </div>
+      </div>
+      <div class="card-body-portfolio clickable col mb-5" onclick="location.href='<%= portfolio_marcelle_path %>'">
+        <%= image_tag"marcelle.svg", width: 400, class: "illustration-work mb-3" %>
         <div class="card-portfolio">
           <h5 class="card-title-portfolio  mb-2">MARCELLE MOBI —</h5>
           <p class="card-text-portfolio">Develop the ecomobility for the Marseille inhabitants with the purpose to find a less polluting means of transport than the car.</p>
           <a href="<%= portfolio_marcelle_path %>" class="card-link">View Details →</a>
         </div>
       </div>
+
+			<div class="mb-5 card-body-portfolio clickable col" onclick="#" target="_blank">
+        <%= image_tag"calculatorDesign.png",  width: 400, class: "illustration-work mb-3", style: "margin: 0 auto" %>
+        <div class="card-portfolio">
+          <h5 class="card-title-portfolio  mb-2">CALCULATOR UI CHALLENGE —</h5>
+          <p class="card-text-portfolio">Black and White Calculator Theme Daily UI</p>
+        </div>
+      </div>
+
     </div>
 
     <div class="right">
       <div id="portfolio-wiiz" class="card-body-portfolio clickable col " onclick="location.href='<%= portfolio_smart_proposal_path %>'" target="_blank">
-        <%= image_tag"imac-smart-proposal.png",  width: 350, class: "illustration-work mb-3", style: "margin: 0 auto" %>
+        <%= image_tag"imac-smart-proposal.png",  width: 400, class: "illustration-work mb-3", style: "margin: 0 auto" %>
         <div class=" card-portfolio">
           <h5 class="card-title-portfolio  mb-2">SMART PROPOSAL —</h5>
           <p class="card-text-portfolio">Solution for the automated creation of commercial offers and response to calls for tenders.</p>
@@ -21,19 +38,33 @@
         </div>
       </div>
 
-      <div class="mb-5 card-body-portfolio clickable col" onclick="location.href='<%= portfolio_coworkspace_path %>'" target="_blank">
-        <%= image_tag"coworkspace-portfolio.png",  width: 350, class: "illustration-work mb-3", style: "margin: 0 auto" %>
+
+			<div class="mb-5 card-body-portfolio clickable col" onclick="location.href='https://www.figma.com/file/FCEFb2tZecXLagOqVjxRkDkp/GlobeWork_Mockup?node-id=0%3A1'" target="_blank">
+        <%= image_tag"figmaGlobeWorker.png",  width: 400, class: "illustration-work mb-3", style: "margin: 0 auto" %>
+        <div class="card-portfolio">
+          <h5 class="card-title-portfolio  mb-2">GLOBEWORKER —</h5>
+          <p class="card-text-portfolio">Wireframe of a landing page for a multi-pass offer project in order to access several coworking spaces.</p>
+          <a href="https://www.figma.com/file/FCEFb2tZecXLagOqVjxRkDkp/GlobeWork_Mockup?node-id=0%3A1" class="card-link">View Details →</a>
+        </div>
+      </div>
+
+			<div class="mb-5 card-body-portfolio clickable col" onclick="location.href='<%= portfolio_coworkspace_path %>'" target="_blank">
+        <%= image_tag"cowork_space.png",  width: 400, class: "illustration-work mb-3", style: "margin: 0 auto" %>
         <div class="card-portfolio">
           <h5 class="card-title-portfolio  mb-2">COWORKSPACE —</h5>
           <p class="card-text-portfolio">Help the digital nomads to book their futur coworkspace easily. A Wagon Project developed with my team in the last 10 days of the Bootcamp.</p>
           <a href="<%= portfolio_coworkspace_path %>" class="card-link">View Details →</a>
         </div>
       </div>
+			
 
+			<div class="card-body-portfolio clickable col" onclick="#">
+        <%= image_tag"paiementDesign.png", width: 400, class: "illustration-work mb-3" %>
+        <div class="card-portfolio">
+          <h5 class="card-title-portfolio  mb-2">PAIEMENT UI CHALLENGE —</h5>
+          <p class="card-text-portfolio">Credit Card Checkout Theme Daily UI</p>
+        </div>
+      </div>
     </div>
-
-
-
-
   </div>
 </div>

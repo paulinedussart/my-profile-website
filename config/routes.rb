@@ -8,5 +8,6 @@ Rails.application.routes.draw do
   get 'portfolio/coworkspace', to: 'portfolios#coworkspace'
 	get 'portfolio/marcelle', to: 'portfolios#marcelle'
 	get 'portfolio/smart-proposal', to: 'portfolios#wiiz'
+	get 'portfolio/recipe', to: 'portfolios#recipe'
 
 end
