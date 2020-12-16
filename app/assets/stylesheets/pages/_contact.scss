@@ -15,3 +15,11 @@
     margin-top: 8rem;
   }
 }
+
+@media screen and (max-width: 800px) {
+  #contact {
+    .contact-text {
+      height: 250px !important;
+    }
+  }
+}
