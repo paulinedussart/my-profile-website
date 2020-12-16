@@ -29,18 +29,15 @@
 
 @media screen and (max-width: 800px) {
   #about {
+    margin-top: 6rem;
     .img-about {
-	    width: 240px !important;
-	    height: 260px !important;
-		}
-
-
+      width: 240px !important;
+      height: 260px !important;
     }
 
     #about-text-description {
       margin-left: 0px;
     }
-    margin-top: 6rem;
 
     .guillemet {
       font-size: 30px;
