@@ -1,10 +1,13 @@
 #about {
+  margin: 0 30px !important;
+
   #about-text-description {
     margin-left: 50px;
   }
-  margin: 0 30px !important;
+
   .img-about {
     box-shadow: 15px 15px 0px 0px #bb2a26;
+    max-height: 513px;
   }
 
   .guillemet {
