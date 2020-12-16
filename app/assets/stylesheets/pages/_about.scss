@@ -7,7 +7,6 @@
 
   .img-about {
     box-shadow: 15px 15px 0px 0px #bb2a26;
-    max-height: 513px;
   }
 
   .guillemet {
@@ -30,6 +29,14 @@
 
 @media screen and (max-width: 800px) {
   #about {
+    .img-about {
+	    width: 240px !important;
+	    height: 260px !important;
+		}
+
+
+    }
+
     #about-text-description {
       margin-left: 0px;
     }
