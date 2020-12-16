@@ -1,10 +1,8 @@
 #about {
-  margin: 0 auto;
+  margin: 0 30px !important;
 
   .img-about {
     box-shadow: 15px 15px 0px 0px #bb2a26;
-    width: 370px;
-    height: 380px;
   }
 
   .guillemet {
@@ -29,19 +27,9 @@
   #about {
     margin-top: 6rem;
 
-    .img-about {
-      width: 250px;
-      height: 260px;
-    }
     .guillemet {
       font-size: 30px;
       line-height: 1rem;
     }
-  }
-}
-
-@media screen and (min-width: 992px) {
-  #about {
-    height: calc(100vh - 293px) !important;
   }
 }

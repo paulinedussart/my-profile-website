@@ -12,26 +12,12 @@
 
 @media screen and (min-width: 801px) {
   #contact {
-    height: calc(100vh - 290px);
-  }
-
-  #contact {
     margin-top: 8rem;
   }
 }
 
 @media screen and (max-width: 801px) {
-  #contact {
-    height: calc(100vh - 200px);
-  }
-
   .contact_logo {
     margin-top: 3rem;
-  }
-}
-
-@media screen and (max-width: 320px) {
-  #contact {
-    height: calc(100vh - 65px);
   }
 }
