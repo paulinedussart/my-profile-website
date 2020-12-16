@@ -16,10 +16,14 @@
   }
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 420px) {
   #contact {
     .contact-text {
-      height: 250px !important;
+      height: 200px !important;
+    }
+
+    .logo-contact {
+      height: 240px !important;
     }
   }
 }
