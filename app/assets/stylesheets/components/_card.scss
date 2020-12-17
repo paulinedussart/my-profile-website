@@ -65,6 +65,11 @@
 .card-body-portfolio {
   transition: 0.8s;
 
+  .card-link {
+    color: white !important;
+    text-decoration: underline;
+  }
+
   &:hover {
     transform: scale(1.09);
     transition: 0.5s;

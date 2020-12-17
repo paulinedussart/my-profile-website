@@ -1,0 +1,5 @@
+meta_product_name: 'Pauline Dussart'
+meta_title: 'Pauline DUSSART | React front-end developper & UI Designer'
+meta_description: 'Mobile and Web Front-end Developer who likes to bring ideas and prototypes to life so that users can enjoy the greatest experience.'
+meta_image: 'og_image_site_web.JPG' # should exist in `app/assets/images/`
+twitter_account: '@pauline_dussart' # required for Twitter Cards
